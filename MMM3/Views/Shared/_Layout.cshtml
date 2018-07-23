@@ -1,42 +1,170 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784140-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121784140-1');
+    </script>
+    <meta http-equiv="content-type" content="text/html/aspx" />
+    <title>1 Solve Solutions - Call centre and virtual assistant provider</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jhiggy Abesamis">
+    <meta name="description" content="1 Solve Solutions - Focus on reaching your business potential - Call Centre and Virtual Assistants providers" />
+
+    <meta name="keywords" content="1 solve solutions new zealand, 1 solve solutions nz, 1 solve solution new zealand, 1 solve solution nz, contact center, call center, virtual assistant, contact centers, call centre, call centres, call, centre, centres, centers, 1 solve solutions, 1, solve, one, solution, solutions, onesolvesolutions, 1solvesolutions, 1solvesolution, onesolvesolution, virtual, virtual employee, virtual employees, virtual call centre, virtual call centres, virtual call centers, call centre definition, call centres definition, call centers definition, call center definition">
+    <meta name="robots" content="index, follow" />
+    <meta name="DC.title" content="Business solution, outsourcing, outsourcing call centre,1 Solve Solutions - Focus on reaching your business potential - Call Center and Virtual Assistants" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="~/image/ico" href="~/images/logo.ico" />
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/css/materialize.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/materialize.css" rel="stylesheet" />
+    
 </head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '224782011681451');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=224782011681451&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Price</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">Foundation</a></li>
+        @*<li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>*@
+    </ul>
+    <nav class="grey" role="navigation">
+        <div class="nav-wrapper">
+
+            <a id="logo-container" href="#" class="brand-logo">
+                <img class="responsive-img" style="max-width:300px;" src="~/images/logo.png">
+            </a>
+            <ul class="right hide-on-med-and-down">
+
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("Services", "Home")">Services</a></li>
+                <li><a href="@Url.Action("HowItWorks", "Home")">How It Works</a></li>
+                <li><a href="@Url.Action("About", "Home")">About</a></li>
+
+                <li><a href="@Url.Action("Foundation", "Home")">Foundation</a></li>
+                <li><a href="@Url.Action("Pricing", "Home")">Price</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+
+                @*<li>@Html.ActionLink("Blog", "Index", "Blog", null, new { target = "_blank" })</li>*@
+            </ul>
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("Services", "Home")">Services</a></li>
+                <li><a href="@Url.Action("HowItWorks", "Home")">How It Works</a></li>
+                <li><a href="@Url.Action("About", "Home")">About</a></li>
+
+                <li><a href="@Url.Action("Foundation", "Home")">Foundation</a></li>
+
+                <li><a href="@Url.Action("Pricing", "Home")">Price</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+
+                @*<li>@Html.ActionLink("Blog", "Index", "Blog", null, new { target = "_blank" })</li>*@
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <footer class="page-footer orange">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About Us</h5>
+                    <h6 class="white-text">
+                        Flexible Virtual Assistants & Call
+                        Centre Solutions
+                    </h6>
+                    <p class="grey-text text-lighten-4">
+                        We are a call centre and virtual assistants company provider that outsource resources from the Philippines. We offer telesales, telemarketing
+                        , inbound call centre and virtual assistants services. Our pricing are so cost effective that
+                        it is ideal for start-up, small-medium sized enterprises and even to individuals like sole traders and builders.
+                        We have experienced in insurance telemarketing, cable subscriptions direct selling,
+                        pharmaceutical sales and virtual assistants services for tradies, start-up companies and medium-sized enterprises.
+                        Contact us now to talk about our economical packages.
+                    </p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Pages</h5>
+                    <ul>
+                        <li><a class="white-text" href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a class="white-text" href="@Url.Action("Services", "Home")">Services</a></li>
+                        <li><a class="white-text" href="@Url.Action("HowItWorks", "Home")">How It Works</a></li>
+                        <li><a class="white-text" href="@Url.Action("About", "Home")">About</a></li>
+                        <li><a class="white-text" href="@Url.Action("Foundation", "Home")">Foundation</a></li>
+                        <li><a class="white-text" href="@Url.Action("Pricing", "Home")">Pricing</a></li>
+                        <li><a class="white-text" href="@Url.Action("Contact", "Home")">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="http://www.facebook.com/1solvesolutions/">Facebook</a></li>
+                        <li><a class="white-text" href="http://www.instagram.com/1solvesolutions/">Instagram</a></li>
+                        <li><a class="white-text" href="http://www.linkedin.com/company/1solvesolutions/">Linkedin</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+        <div class="footer-copyright">
+            <div class="container white-text">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> | Trading as 1 Solve Solutions | NZBN 9429 0468 28866 | All rights reserved.
+                <br />
+                <a class="white-text" href="~/Documents/SERVICE AGREEMENT.pdf">Service Agreement</a> | <a class="white-text" href="~/Documents/T&C.pdf">Terms & Conditions</a>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="~/js/materialize.js"></script>
+    <script src="~/js/init.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".slider").slider();
+        });
+
+    </script>
 </body>
 </html>

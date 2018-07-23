@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "HowItWorks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    @{
+        Html.RenderPartial("_HowItWorksNavigation");
+    }
+</div>
+
+<div class="row">
+    @{
+        Html.RenderPartial("_OutboundHeader");
+    }
+</div>
+
+<div class="row">
+    @{
+        Html.RenderPartial("_OutboundProcess");
+    }
+</div>
+
+@{
+    Html.RenderPartial("_Contact");
+}

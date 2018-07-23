@@ -1,0 +1,502 @@
+﻿
+@{
+    ViewBag.Title = "Pricing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    .pricing-table {
+        text-align: center;
+    }
+
+    /* Each pricing-item*/
+    .pricing-item {
+        border-radius: 3px;
+        display: inline-block;
+        width: 260px;
+        height: auto;
+        background: #fff;
+        margin: 20px;
+        vertical-align: top;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+        transition: all 0.2s cubic-bezier(0.3, 0.6, 0.2, 1.8);
+    }
+
+        .pricing-item:hover {
+            -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+        }
+
+        .pricing-item .pricing-title {
+            width: 100%;
+            color: white;
+            display: block;
+            position: relative;
+            background: #0074d9;
+            padding: 7px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .pricing-item.pricing-featured .pricing-title {
+            background: #ff4136;
+        }
+
+    /* pricing-value */
+    .pricing-value {
+        width: 180px;
+        height: 180px;
+        padding-top: 46px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 46px;
+        font-weight: 300;
+        margin: 10px auto;
+    }
+
+        .pricing-value .smallText {
+            font-size: 14px;
+        }
+
+        .pricing-value .undertext {
+            display: block;
+            font-size: 16px;
+        }
+
+    .pricing-item .pricing-value {
+        background: #0074d9;
+        border: 2px solid #0074d9;
+    }
+
+    .pricing-item.pricing-featured .pricing-value {
+        background: #ff4136;
+        border: 2px solid #ff4136;
+    }
+
+    /* List */
+    .pricing-item .pricing-features {
+        margin: 10px 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .pricing-item .pricing-features li {
+            display: block;
+            width: 90%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            font-weight: 400;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+            .pricing-item .pricing-features li .keywords {
+                font-weight: bold;
+            }
+
+    .button {
+        width: 140px;
+        height: 38px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        margin: 0 auto;
+        background: #fff;
+        color: #0074d9;
+        border: 2px solid #0074d9;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: 0.2s ease-out;
+        /*-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.05);*/
+    }
+
+        .button:hover {
+            background: #0074d9;
+            color: #fff;
+            border: none;
+            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        }
+
+    .pricing-item.pricing-featured .button {
+        color: #ff4136;
+        border: 2px solid #ff4136;
+    }
+
+        .pricing-item.pricing-featured .button:hover {
+            background: #ff4136;
+            color: #fff;
+        }
+
+    .selected {
+        z-index: 10;
+        width: 180px;
+        height: 32px;
+        padding: 0 20px;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0px 2px 5px #888888;
+        background: gold;
+        border-top: 5px solid gold;
+        border-bottom: 5px solid gold;
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+        position: absolute;
+        right: -47px;
+        top: 17px;
+    }
+</style>
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="header center orange-text">Our Pricing</h1>
+    </div>
+</div>
+
+
+<div class="section card-panel">
+
+    <div class="row">
+        <div class="col s12 m4">
+
+            <div class="pricing-table">
+                <div class="pricing-item">
+                    <div class="pricing-title">
+                        Outbound campaigns
+                    </div>
+                    <div class="pricing-value">
+                        $14<span class="smallText">per hour</span>
+                        <span class="undertext">/agent</span>
+                    </div>
+                    <div class="pricing-features">
+                        <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                    </div>
+
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <table class="responsive-table highlight striped">
+
+                <tbody>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Telesales</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Lead Generations</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Cold Calling</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Telemarketing</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Insurance Sales</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Surveys</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Appointment Setting</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col s12 m4">
+            <div class="card-panel hoverable">
+                <p>
+                    Our experienced agents will generate interest for your products and services, while creating opportunity by providing information and factors customer's feedbacks. We will also be able to schedule appointments and produce leads by calling your client list.
+                </p>
+                <p>
+                    On the other hand our experience sales agents can study your products and services and directly sell it over the phone.
+                </p>
+
+                <p class="keywords">Other kinds are: Payment Protection, Event Registration, Selling Products and Services, Collection Reminder, Market Research, Customer Retention, Loyalty Programs, Warranty Programs, Billing Reminders, Upselling and Cross Selling</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="card-panel">
+                <h6>Target Businesses</h6>
+                <table class="responsive-table highlight striped">
+       
+                    <tbody>
+                        <tr>
+                            <td><i class="material-icons">label_important</i><span class="keywords">Retail Companies</span></td>
+                            <td><i class="material-icons">label_important</i><span class="keywords">B2B Companies</span></td>
+                            <td><i class="material-icons">label_important</i><span class="keywords">E-commerce Stores</span></td>
+                            <td><i class="material-icons">label_important</i><span class="keywords">Travel and Tourism Companies</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons">label_important</i><span class="keywords">Multi National Companies</span></td>
+                            <td><i class="material-icons">label_important</i><span class="keywords">Business Directories</span></td>
+                            <td><i class="material-icons">label_important</i><span class="keywords">SAAS Companies</span></td>
+                            <td><i class="material-icons">label_important</i><span class="keywords">Cable Companies</span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+
+                            <td><i class="material-icons">label_important</i><span class="keywords">Insurance Companies</span></td>
+                            <td><i class="material-icons">label_important</i><span class="keywords">Finance Companies</span></td>
+                            <td></td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section card-panel">
+
+    <div class="row">
+        <div class="col s12 m4">
+
+            <div class="pricing-table">
+                <div class="pricing-item">
+                    <div class="pricing-title">
+                        Inbound Campaigns
+                    </div>
+                    <div class="pricing-value">
+                        $14<span class="smallText">per hour</span>
+                        <span class="undertext">/agent</span>
+                    </div>
+                    <div class="pricing-features">
+                        <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                    </div>
+
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <table class="responsive-table highlight striped">
+
+                <tbody>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Customer Service</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Technical Support</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Help Desk</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Inbound Sales</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Telephone Answering</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Virtual Reception</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Cellphone Answering</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col s12 m4">
+            <div class="card-panel hoverable">
+                <p>
+                    Our highly skilled agents will enhance your customer's experience when answering their calls. Not only they will show expertise in your products or services but highest phone courtesy and customer service will be given to everybody.
+
+
+                </p>
+                <p>
+                    Failing to answer the phone will not be a problem anymore. No more missed calls and you can be assured that somebody will always pick up the client's call.
+                </p>
+
+                <p class="keywords">Other kinds are: Overflow / After Hours, Medical Answering, Appointment Management, Building Maintenance, Direct Response, Disaster Response, Dispatch, Emergency Services, Hotlines, Virtual Receptionist, Order Processing.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel">
+                    <h6>Target Businesses</h6>
+                    <table class="responsive-table highlight striped">
+
+                        <tbody>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Loans Companies</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Mortgage Companies</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Education</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Hotels</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Spa and Cosmetics Clinics</span></td>
+
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Multi National Companies</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Automotive</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Home Services</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Cable Companies</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Emergency Hotlines</span></td>
+
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Tradies</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Legal</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Restaurants</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Healthcare services</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Online Stores</span></td>
+
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Power Companies</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Medical Clinic</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Dental Clinics</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Hospitals</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Builders</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section card-panel">
+
+    <div class="row">
+        <div class="col s12 m4">
+
+            <div class="pricing-table">
+                <div class="pricing-item">
+                    <div class="pricing-title">
+                        Virtual Employees
+                    </div>
+                    <div class="pricing-value">
+                        $12<span class="smallText">per hour</span>
+                        <span class="undertext">/agent</span>
+                    </div>
+                    <div class="pricing-features">
+                        <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                    </div>
+
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <table class="responsive-table highlight striped">
+
+                <tbody>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Virtual Assistants</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Personal Secretaries</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Remote Employees</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Clerical Management</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Incoming and Outgoing Emails</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Email and Calendar Management</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons">check_circle</i>Operational Support</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col s12 m4">
+            <div class="card-panel hoverable">
+                <p>
+                    Our highly skilled virtual assistants will be your built-in accountability partner running your business. They are not only trained to do all those clerical and administrative work but they are also there to make sure your business goals are met.
+
+                </p>
+                <p>
+                    If you need more help filing all those income tax returns, organize your emails, research something online, book a flight and more all of these can be handled by your VA and not only that train them any kind of responsibilities and they will be up and running at no time.
+                </p>
+
+                <p class="keywords">
+                    Other kinds are: Email and Chat Support, Website and Social Media Management, Bookkeeping, Content Writers, Internet research, Spreadsheets, Presentations, File Management, Data Encoding, CRM & CMS Support, Getting Quotes, Transcription, Back office support
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel">
+                    <h6>Target Businesses</h6>
+                    <table class="responsive-table highlight striped">
+                        <tbody>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Real Estate Brokers</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Property Managers</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Real Estate Agents</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Law Firms</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">IT Firms</span></td>
+
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Accounting Firms</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Financial Firms</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Marketing Firms</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Healthcare services</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Authors and Business Coach</span></td>
+
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Tradies</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Business Startups</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Restaurants</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Healthcare services</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Home Owner Associations</span></td>
+
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Community Group</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Medical Clinic</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Dental Clinics</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Doctors</span></td>
+                                <td><i class="material-icons">label_important</i><span class="keywords">Builders</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+    Html.RenderPartial("_Contact");
+}

@@ -159,15 +159,39 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\materialize-social.css" />
+    <Content Include="css\materialize.css" />
+    <Content Include="css\materialize.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\timeline.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\call.jpg" />
+    <Content Include="images\callcenter.jpg" />
+    <Content Include="images\classroom.jpg" />
+    <Content Include="images\freeservicetrialcard.JPG" />
+    <Content Include="images\header-bg-2.jpg" />
+    <Content Include="images\header-bg-3.jpg" />
+    <Content Include="images\logo.ico" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\status.PNG" />
+    <Content Include="images\strategy.PNG" />
+    <Content Include="images\t1.jpg" />
+    <Content Include="images\t5.jpg" />
+    <Content Include="images\t6.jpg" />
+    <Content Include="images\workhard.jpg" />
+    <Content Include="js\init.js" />
+    <Content Include="js\materialize.js" />
+    <Content Include="js\materialize.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Documents\SERVICE AGREEMENT.pdf" />
+    <Content Include="Documents\T&amp;C.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -193,6 +217,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Contact.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\Foundation.cshtml" />
+    <Content Include="Views\Home\Pricing.cshtml" />
+    <Content Include="Views\Home\HowItWorks.cshtml" />
+    <Content Include="Views\Shared\_HowItWorksNavigation.cshtml" />
+    <Content Include="Views\Shared\_OutboundHeader.cshtml" />
+    <Content Include="Views\Shared\_OutboundProcess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

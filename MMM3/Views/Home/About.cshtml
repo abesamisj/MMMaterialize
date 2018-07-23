@@ -1,7 +1,123 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+
+
+<div class="section card-panel">
+
+    <div class="row">
+        <h1 class="header center orange-text">About us</h1>
+        <div class="col s12 m6">
+            <img class="responsive-img" src="~/images/call.jpg" alt="">
+        </div>
+        <div class="col s12 m6">
+            <div class="card-panel">
+                <div class="card-content black-text">
+                    <p>
+                        1 SOLVE SOLUTIONS will offer call centre and virtual assistant solutions to small-medium enterprises that are looking to reduce cost, improve efficiency and minimize overhead expenses by shifting operations via outsourcing.
+
+                        Our business development managers / co-founders are based in New Zealand (Auckland and Wellington). Which main priority is for the company to acquire new customers and sell our services. We service 20 seats capacity and we are looking to expand from our DirectTV campaign and while also doing our internal project for a health care provider.
+
+                        We can proudly say that we have a fun, productive and proactive workplace which is reflected on the attitude and beliefs of our leaders. Our agents can generate results at any feasible rates the clients give us, as it is centred on encouragement and ownership of the campaigns.
+
+                        If you want to know more give us a call and let us discuss how we can help.
+                    </p>
+                    <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="section card-panel">
+
+    <div class="row">
+        <h1 class="header center orange-text">Our Mission</h1>
+        <div class="col s12 m6">
+            <div class="card-panel">
+                <div class="card-content black-text">
+                    <p>
+                        To provide a more personalised and customisable back office service operation.
+                        Offering services that are cost effective in pricing and have a strong focus
+                        on quality seeking to exceed our customers expectations.
+
+                    </p>
+                    <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <img class="responsive-img" src="~/images/t1.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+
+<div class="section card-panel">
+
+    <div class="row">
+        <h1 class="header center orange-text">Our Vision</h1>
+        <div class="col s12 m6">
+            <img class="responsive-img" src="~/images/t5.jpg" alt="">
+        </div>
+        <div class="col s12 m6">
+            <div class="card-panel">
+                <div class="card-content black-text">
+                    <p>
+                        To be the number 1 call centre provider
+                        by providing highly optimized and capacitated organizations resilient to contemporary challenges
+                        that are effectively
+                        responsive to the modern day market.
+                    </p>
+                    <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+
+<div class="section card-panel">
+
+    <div class="row">
+        <h1 class="header center orange-text">Our Promise</h1>
+        <div class="col s12 m6">
+            <div class="card-panel">
+                <div class="card-content black-text">
+                    <table class="responsive-table highlight striped">
+                        
+                        <tbody>
+                            <tr>
+                                <td><i class="material-icons">check_circle</i>Scalable and effective solutions.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">check_circle</i>Competent leaders who can mold and produce reliable agents.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">check_circle</i>Experienced sales representatives, customer representatives and virtual assistants.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">check_circle</i>We will enhance your customer's experience.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">check_circle</i>Our agents are proactive and can work independently with minimal supervision.</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons">check_circle</i>We focus on growth because your success is our success too.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <img class="responsive-img" src="~/images/t6.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+@{
+    Html.RenderPartial("_Contact");
+}
