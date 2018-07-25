@@ -192,6 +192,7 @@
     </Content>
     <Content Include="Documents\SERVICE AGREEMENT.pdf" />
     <Content Include="Documents\T&amp;C.pdf" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -225,6 +226,12 @@
     <Content Include="Views\Shared\_HowItWorksNavigation.cshtml" />
     <Content Include="Views\Shared\_OutboundHeader.cshtml" />
     <Content Include="Views\Shared\_OutboundProcess.cshtml" />
+    <Content Include="Views\Home\Inbound.cshtml" />
+    <Content Include="Views\Shared\_InboundHeader.cshtml" />
+    <Content Include="Views\Shared\_InboundProcess.cshtml" />
+    <Content Include="Views\Home\VirtualAssistants.cshtml" />
+    <Content Include="Views\Shared\_VirtualAssistantsHeader.cshtml" />
+    <Content Include="Views\Shared\_VirtualAssistantsProcess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

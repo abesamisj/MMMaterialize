@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Inbound";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    @{
+        Html.RenderPartial("_HowItWorksNavigation");
+    }
+</div>
+
+<div class="row">
+    @{
+        Html.RenderPartial("_InboundHeader");
+    }
+</div>
+
+<div class="row">
+    @{
+        Html.RenderPartial("_InboundProcess");
+    }
+</div>
+
+@{
+    Html.RenderPartial("_Contact");
+}

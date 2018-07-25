@@ -39,6 +39,14 @@ namespace MMM3.Controllers
         {
             return View();
         }
+        public ActionResult VirtualAssistants()
+        {
+            return View();
+        }
+        public ActionResult Inbound()
+        {
+            return View();
+        }
         public ActionResult Contact()
         {
             return View();

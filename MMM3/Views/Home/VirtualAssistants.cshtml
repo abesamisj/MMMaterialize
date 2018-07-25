@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "VirtualAssistants";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    @{
+        Html.RenderPartial("_HowItWorksNavigation");
+    }
+</div>
+
+<div class="row">
+    @{
+        Html.RenderPartial("_VirtualAssistantsHeader");
+    }
+</div>
+
+<div class="row">
+    @{
+        Html.RenderPartial("_VirtualAssistantsProcess");
+    }
+</div>
+
+@{
+    Html.RenderPartial("_Contact");
+}
