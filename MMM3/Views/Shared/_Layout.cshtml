@@ -11,46 +11,25 @@
         gtag('config', 'UA-121784140-1');
     </script>
     <meta http-equiv="content-type" content="text/html/aspx" />
-    <title>Call centre and virtual assistant provider | New Zealand | Australia</title>
+    <title>@ViewBag.Title</title>
     <meta charset="utf-8">
-    <meta name="author" content="Jhiggy Abesamis">
-    <meta name="description" content="We offer telesales, telemarketing, inbound call centre and virtual assistants services" />
+    <meta name="description" content=@ViewBag.Description />
 
-    <meta name="keywords" content="Wellington Call Centre, New Zealand Call centre, Outbound Call Centres, Inbound Call Centres, Multilingual Call centre,Customer service outsourcing, direct response Call centre 
-Direct Marketing, Email Marketing, Database Cleaning,Intelligent Data , Outsourced Contact Centre, contact centre services, call centre solution,BPO UK, Inbound call centre 
-Service management software, Call centre software, Customer service software,Call centre technology, Field service software 
-Call Handling, Telephone Answering, Business Answering Services,Call Centre Serices, Call Centres 
-cheap international calls, long distance calling numbers, call answering, telephone answering, Learner Find, Employer Engagement , Are you relying on your voicemail as your reception?, Do you find that your phones interrupt your working day?, High advertising costs, can you afford to miss potential business?,When youre not available we will be., Free weeks trail available to first 10 customers, quoting reference KASOFFER7 
-Call Centre Sales, telemarketing, Wellington call campaigns,Marketing campaigns, sell products 
-Call centre, call services, answering services, Call centre, Answering services, Phone answering services,Call answering services, Virtual Call centre, Premium Rate Services, IVR solutions,Telephone Psychic Readings, IVR systems 
-call centre, international call centre, lead generation glasgow, multilingual call centre services,outbound sales, B2B outsourcing 
-love2talk, limited, flirt,talk, chat 
-automotive, contact centre, call centre,customer retention, customer loyalty 
-outsource contact centre, telesales, out of hours,customer service, Call centre, Outsourcing, Fulifilment, data entry, data processing, inbound chat customer support, software development,scanning, interner research 
-Call Centres, Contact Centres, Communicatoin Centres , call centre services, multilingual call centre, global call centre, Call Centre Service, Inbound Call centre, Telemarketing services,Contact centre, Call Centre Outsourcing 
-Telemarketing, Telesales, Lead Generation,Customer Service, Data Cleansing 
-Telemarketing , Call centre, Telesales,Telemarketing services, Telemarketing campaigns 
-Call Centre, Call Handling, Virtual Reception,Out of Hours, Inbound Call HAndling Services 
-secured loan leads, unseucred loan leads, debt management leads,iva leads, remortgage leads 
-customer service, order-taking & fulfillment, logistics,telephone-answering, meeting management 
-website agency, call centre, telemarketer,webdesign , customer service 
-virtual receptionist, answering service, virtual call centre,call handling in New Zealand, call centre outsourcing service 
-h, e, l,e, n 
-call centre, call centre services, telephone answering service,call handling service, order processing 
-BPO, call centre, outsourcing,Inbound, outbound 
-Telephone Answering, Telemarketing, Call Centre,Call Handling, Contact Centre 
-SMS, text, messaging,call, centre 
-Call Centre, Inbound Outbound, Outsourcing,Fulfilment, Oracall Journeycall 
-Call Centre, Contact Centre, Answer Service,Telephone Answering, Messaging Services 
-Telemarketing, Call answering, Virtual assistant,Virtual office, Virtual PA">
-    <meta name="robots" content="index, follow" />
-    <meta name="DC.title" content="Business solution, outsourcing, outsourcing call centre,1 Solve Solutions - Focus on reaching your business potential - Call Center and Virtual Assistants" />
+
+    <meta name="keywords" content="Outbound Call Centre, Inbound Call Centre, Outsourcing, Telemarketing, Telesales, Lead Generation, Customer Service, Virtual assistant">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="http://www.1solvesolutions.co.nz/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="1 Solve Solutions - Call centre and virtual assistant provider" />
-    <meta property="og:description" content="1 Solve Solutions - Focus on reaching your business potential - Call Centre and Virtual Assistants providers" />
-    <meta property="og:image" content="http://www.1solvesolutions.co.nz/images/call.jpg" />
+    <meta name="og:url" content="http://www.1solvesolutions.co.nz/" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="Cost-effective call centre and virtual assistants company provider that outsource resources from the Philippines. We offer inbound & outbound call centre & virtual assistants services. Ideal for start-up, small-medium sized enterprises and individuals like sole proprietorship, tradies and builders" />
+    <meta name="og:description" content="Cost-effective call centre and virtual assistants company provider that outsource resources from the Philippines. We offer inbound & outbound call centre & virtual assistants services. Ideal for start-up, small-medium sized enterprises and individuals like sole proprietorship, tradies and builders" />
+    <meta name="og:image" content="http://www.1solvesolutions.co.nz/images/call.jpg" />
+    <meta name="fb:app_id" content="1905679722801491" />
+    <meta name="og:site_name" content="1 Solve Solutions">
+    <meta name="og:email" content="enquiries@1solvesolutions.co.nz" />
+    <meta name="og:phone_number" content="+642102470610" />
+
+    <meta name="tag" content="telesales" />
+
     <link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
     <link rel="shortcut icon" type="~/image/ico" href="~/images/logo.ico" />
 
@@ -59,7 +38,7 @@ Telemarketing, Call answering, Virtual assistant,Virtual office, Virtual PA">
     <link href="~/css/materialize.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="~/css/materialize.css" rel="stylesheet" />
+
 
 </head>
 
@@ -193,15 +172,18 @@ Telemarketing, Call answering, Virtual assistant,Virtual office, Virtual PA">
 
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="~/js/materialize.min.js"></script>
     <script src="~/js/materialize.js"></script>
     <script src="~/js/init.js"></script>
-    <script type="text/javascript">
+    <!--Materializecss Slider-->
+    <script>
+    $(document).ready(function () {
 
-        $(document).ready(function () {
-            $(".slider").slider();
+            $('.slider').slider({
+                full_width: true
+            });
         });
-
     </script>
 </body>
 </html>

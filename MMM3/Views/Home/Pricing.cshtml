@@ -1,6 +1,5 @@
 ﻿
 @{
-    ViewBag.Title = "Pricing";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -41,14 +40,14 @@
             color: white;
             display: block;
             position: relative;
-            background: #0074d9;
+            background: #607d8b;
             padding: 7px;
             font-weight: bold;
             font-size: 20px;
         }
 
         .pricing-item.pricing-featured .pricing-title {
-            background: #ff4136;
+            background: #607d8b;
         }
 
     /* pricing-value */
@@ -73,13 +72,13 @@
         }
 
     .pricing-item .pricing-value {
-        background: #0074d9;
-        border: 2px solid #0074d9;
+        background: #607d8b;
+        border: 2px solid #607d8b;
     }
 
     .pricing-item.pricing-featured .pricing-value {
-        background: #ff4136;
-        border: 2px solid #ff4136;
+        background: #607d8b;
+        border: 2px solid #607d8b;
     }
 
     /* List */
@@ -175,14 +174,14 @@
             <div class="pricing-table">
                 <div class="pricing-item">
                     <div class="pricing-title">
-                        Outbound campaigns
+                        Outbound Call Centre
                     </div>
                     <div class="pricing-value">
                         $14<span class="smallText">per hour</span>
                         <span class="undertext">/agent</span>
                     </div>
                     <div class="pricing-features">
-                        <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                        <a class="btn btn-primary btn-lg blue pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
                     </div>
 
                     <br />
@@ -194,27 +193,27 @@
 
                 <tbody>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Telesales</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Telesales</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Lead Generations</td>
-                    </tr>
-
-                    <tr>
-                        <td><i class="material-icons">check_circle</i>Cold Calling</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Lead Generations</strong></td>
                     </tr>
 
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Telemarketing</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Cold Calling</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Telemarketing</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Insurance Sales</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Insurance Sales</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Surveys</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Surveys</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Appointment Setting</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Appointment Setting</strong></td>
                     </tr>
                 </tbody>
             </table>
@@ -222,13 +221,15 @@
         <div class="col s12 m4">
             <div class="card-panel hoverable">
                 <p>
-                    Our experienced agents will generate interest for your products and services, while creating opportunity by providing information and factors customer's feedbacks. We will also be able to schedule appointments and produce leads by calling your client list.
+                    Our experienced <strong>telemarketing</strong> agents will generate interest for your products and services, 
+                    while creating opportunity by providing information and factors customer's feedbacks. 
+                    We will also be able to schedule appointments and produce leads by calling your client list.
                 </p>
                 <p>
-                    On the other hand our experience sales agents can study your products and services and directly sell it over the phone.
+                    On the other hand our experience <strong>telesales</strong> agents can study your products and services and directly sell it over the phone.
                 </p>
 
-                <p class="keywords">Other kinds are: Payment Protection, Event Registration, Selling Products and Services, Collection Reminder, Market Research, Customer Retention, Loyalty Programs, Warranty Programs, Billing Reminders, Upselling and Cross Selling</p>
+                <p class="keywords">Other kinds are: <strong>Payment Protection, Event Registration, Selling Products and Services, Collection Reminder, Market Research, Customer Retention, Loyalty Programs, Warranty Programs, Billing Reminders, Upselling and Cross Selling</strong></p>
             </div>
         </div>
     </div>
@@ -278,14 +279,14 @@
             <div class="pricing-table">
                 <div class="pricing-item">
                     <div class="pricing-title">
-                        Inbound Campaigns
+                        Inbound Call Centre
                     </div>
                     <div class="pricing-value">
                         $14<span class="smallText">per hour</span>
                         <span class="undertext">/agent</span>
                     </div>
                     <div class="pricing-features">
-                        <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                        <a class="btn btn-primary btn-lg blue pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
                     </div>
 
                     <br />
@@ -297,27 +298,27 @@
 
                 <tbody>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Customer Service</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Customer Service</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Technical Support</td>
-                    </tr>
-
-                    <tr>
-                        <td><i class="material-icons">check_circle</i>Help Desk</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Technical Support</strong></td>
                     </tr>
 
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Inbound Sales</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Help Desk</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Inbound Sales</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Telephone Answering</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Telephone Answering</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Virtual Reception</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Virtual Reception</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Cellphone Answering</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Cellphone Answering</strong></td>
                     </tr>
                 </tbody>
             </table>
@@ -325,15 +326,15 @@
         <div class="col s12 m4">
             <div class="card-panel hoverable">
                 <p>
-                    Our highly skilled agents will enhance your customer's experience when answering their calls. Not only they will show expertise in your products or services but highest phone courtesy and customer service will be given to everybody.
-
-
+                    Our highly skilled <strong>customer representatives</strong> will enhance your customer's experience when answering their calls. 
+                    Not only they will show expertise in your products or services but highest phone courtesy and customer service will be given to everybody.
                 </p>
                 <p>
-                    Failing to answer the phone will not be a problem anymore. No more missed calls and you can be assured that somebody will always pick up the client's call.
+                    Failing to answer the phone will not be a problem anymore. 
+                    No more missed calls and you can be assured that somebody will always pick up the client's call.
                 </p>
 
-                <p class="keywords">Other kinds are: Overflow / After Hours, Medical Answering, Appointment Management, Building Maintenance, Direct Response, Disaster Response, Dispatch, Emergency Services, Hotlines, Virtual Receptionist, Order Processing.</p>
+                <p class="keywords">Other kinds are: <strong>Overflow / After Hours, Medical Answering, Appointment Management, Building Maintenance, Direct Response, Disaster Response, Dispatch, Emergency Services, Hotlines, Virtual Receptionist, Order Processing</strong>.</p>
             </div>
         </div>
         <div class="row">
@@ -399,7 +400,7 @@
                         <span class="undertext">/agent</span>
                     </div>
                     <div class="pricing-features">
-                        <a class="btn btn-primary btn-lg orange pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
+                        <a class="btn btn-primary btn-lg blue pulse" href="@Url.Action("Contact", "Home")">Contact us now!</a>
                     </div>
 
                     <br />
@@ -411,27 +412,27 @@
 
                 <tbody>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Virtual Assistants</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Virtual Assistants</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Personal Secretaries</td>
-                    </tr>
-
-                    <tr>
-                        <td><i class="material-icons">check_circle</i>Remote Employees</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Personal Secretaries</strong></td>
                     </tr>
 
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Clerical Management</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Remote Employees</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Clerical Management</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Incoming and Outgoing Emails</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Incoming and Outgoing Emails</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Email and Calendar Management</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Email and Calendar Management</strong></td>
                     </tr>
                     <tr>
-                        <td><i class="material-icons">check_circle</i>Operational Support</td>
+                        <td class="title"><i class="material-icons">check_circle</i><strong>Operational Support</strong></td>
                     </tr>
                 </tbody>
             </table>
@@ -439,15 +440,15 @@
         <div class="col s12 m4">
             <div class="card-panel hoverable">
                 <p>
-                    Our highly skilled virtual assistants will be your built-in accountability partner running your business. They are not only trained to do all those clerical and administrative work but they are also there to make sure your business goals are met.
-
+                    Our highly skilled <strong>virtual assistants</strong> will be your built-in accountability partner running your business. 
+                    They are not only trained to do all those clerical and administrative work but they are also there to make sure your business goals are met.
                 </p>
                 <p>
                     If you need more help filing all those income tax returns, organize your emails, research something online, book a flight and more all of these can be handled by your VA and not only that train them any kind of responsibilities and they will be up and running at no time.
                 </p>
 
                 <p class="keywords">
-                    Other kinds are: Email and Chat Support, Website and Social Media Management, Bookkeeping, Content Writers, Internet research, Spreadsheets, Presentations, File Management, Data Encoding, CRM & CMS Support, Getting Quotes, Transcription, Back office support
+                    Other kinds are: <strong>Email and Chat Support, Website and Social Media Management, Bookkeeping, Content Writers, Internet research, Spreadsheets, Presentations, File Management, Data Encoding, CRM & CMS Support, Getting Quotes, Transcription, Back office support</strong>
                 </p>
             </div>
         </div>

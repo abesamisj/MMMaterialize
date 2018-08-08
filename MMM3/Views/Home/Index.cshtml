@@ -1,63 +1,56 @@
-﻿@{
-    ViewBag.Title = "Call Centre and Virtual Assistants providers";
-}
-
-
-
-
+﻿
 
 <div class="slider">
     <ul class="slides">
         <li>
-            <img src="~/images/callcenter.jpg" class="responsive-img" alt="call centre consultant" title="Consult us now for call centre solutions"/>
-            <!-- random image -->
+            <img src="~/images/callcenter.jpg" class="responsive-img" alt="call centre consultant" title="Consult us now for call centre solutions" />
             <div class="caption left-align">
-                <h3 class="light grey-text text-lighten-3">Focus on your core competencies!</h3>
-                <h5 class="light grey-text text-lighten-3">Profitability | Productivity | Lead Generation</h5>
-                <h6 class="light grey-text text-lighten-3"><strong>Telesales - Telemarketing</strong></h6>
+                <h2 class="light grey-text text-lighten-3 title"><strong>Telesales - Telemarketing</strong></h2>
+                <h6 class="light grey-text text-lighten-3">Profitability | Productivity | Lead Generation</h6>
+                @*                <h6 class="light grey-text text-lighten-3">Focus on your core competencies!</h6>*@
                 <a class="waves-effect waves-light light-blue btn-large" href="@Url.Action("HowItWorks", "Home")"><i class="material-icons right">info</i>Learn more</a>
             </div>
         </li>
         <li>
-            <img src="~/images/classroom.jpg" class="responsive-img" alt="call centre classroom type setup" title="Classroom type call centre office"/>
-            <!-- random image -->
+            <img src="~/images/classroom.jpg" class="responsive-img" alt="call centre classroom type setup" title="Classroom type call centre office" />
             <div class="caption right-align">
-                <h3 class="light grey-text text-lighten-3">Enhance experience</h3>
-                <h5 class="light grey-text text-lighten-3">After-Sales | Troubleshooting | Help Line</h5>
-                <h6 class="light grey-text text-lighten-3"><strong>Customer Service - Technical Support</strong></h6>
+                <h2 class="light grey-text text-lighten-3 title"><strong>Inbound - Customer Service</strong></h2>
+                <h6 class="light grey-text text-lighten-3">After-Sales | Troubleshooting | Help Line</h6>
+                @*              <h6 class="light grey-text text-lighten-3">Enhance experience</h6>*@
                 <a class="waves-effect waves-light light-blue btn-large" href="@Url.Action("Inbound", "Home")"><i class="material-icons right">info</i>Learn more</a>
             </div>
         </li>
         <li>
-            <img src="~/images/header-bg-3.jpg" class="responsive-img" alt="call centre world" title="Consult us now for call centre solutions"/>
-            <!-- random image -->
+            <img src="~/images/header-bg-3.jpg" class="responsive-img" alt="call centre world" title="Consult us now for call centre solutions" />
             <div class="caption left-align">
-                <h3 class="light grey-text text-lighten-3">Making it easy for you!</h3>
-                <h5 class="light grey-text text-lighten-3">Organise | Prioritise | Delegate</h5>
-                <h6 class="light grey-text text-lighten-3"><strong>Personal Secretaries - Remote Employees</strong></h6>
+                <h3 class="light grey-text text-lighten-3 title"><strong>Personal Secretaries - Remote Employees</strong></h3>
+                <h6 class="light grey-text text-lighten-3">Organise | Prioritise | Delegate</h6>
+                @*<h6 class="light grey-text text-lighten-3">Making it easy for you!</h6>*@
                 <a class="waves-effect waves-light light-blue btn-large" href="@Url.Action("VirtualAssistants", "Home")"><i class="material-icons right">info</i>Learn more</a>
             </div>
         </li>
         <li>
-            <img src="~/images/freeservicetrialcard.JPG" class="responsive-img" alt="free call centre service trial" title="Consult us now for call centre solutions"/>
-            <!-- random image -->
+            <img src="~/images/freeservicetrialcard.JPG" class="responsive-img" alt="free call centre service trial" title="Consult us now for call centre solutions" />
             <div class="caption right-align">
-                <h3 class="light grey-text text-lighten-3"><strong>No cost no commitment basis</strong></h3>
-                <h5 class="light grey-text text-lighten-3">2 hrs everyday or 16 hrs non-stop</h5>
+                <h3 class="light grey-text text-lighten-3 title"><strong>Virtual Assistants - Call Centre</strong></h3>
+                <h6 class="light grey-text text-lighten-3">2 hrs daily or 16 hrs</h6>
+                @*<h6 class="light grey-text text-lighten-3"><strong>No cost no commitment</strong></h6>*@
                 <a class="waves-effect waves-light light-blue btn-large" href="@Url.Action("VirtualAssistants", "Home")"><i class="material-icons right">info</i>Learn more</a>
             </div>
         </li>
         <li>
-            <img src="~/images/header-bg-2.jpg" class="responsive-img" alt="cheap call centre solutions" title="budget-friendly call centre solutions"/>
-            <!-- random image -->
+            <img src="~/images/header-bg-2.jpg" class="responsive-img" alt="cheap call centre solutions" title="cheap call centre solutions" />
             <div class="caption center-align">
                 <h3 class="light grey-text text-lighten-3"><strong>Reducing business costs.</strong></h3>
-                <h5 class="light grey-text text-lighten-3">Starting $12 per hour.</h5>
+                <h6 class="light grey-text text-lighten-3">Starting $12 per hour.</h6>
                 <a class="waves-effect waves-light light-blue btn-large" href="@Url.Action("VirtualAssistants", "Home")"><i class="material-icons right">info</i>Learn more</a>
             </div>
         </li>
     </ul>
 </div>
+
+
+
 
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
@@ -154,15 +147,15 @@
                     <span class="card-title"><i class="material-icons center-align">assignment_turned_in</i> <strong>Operational Support</strong></span>
                     <p>
                         We will perform <strong>
-    any duties that are needed to support
-    your back office
-</strong>, ensuring this area of your business you won’t have to be concerned
+                            any duties that are needed to support
+                            your back office
+                        </strong>, ensuring this area of your business you won’t have to be concerned
                         about.
                     </p>
                     <br />
                     <br />
                 </div>
-                
+
                 <div class="card-action">
                     <a href="@Url.Action("VirtualAssistants", "Home")" class="waves-effect waves-light btn blue">Read More</a>
                 </div>
@@ -175,3 +168,4 @@
 @{
     Html.RenderPartial("_Contact");
 }
+
